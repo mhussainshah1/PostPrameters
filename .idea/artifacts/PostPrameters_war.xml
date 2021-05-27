@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PostPrameters:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PostPrameters</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PostPrameters-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="PostPrameters:war exploded" />
+    </root>
+  </artifact>
+</component>

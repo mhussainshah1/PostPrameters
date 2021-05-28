@@ -37,7 +37,7 @@ public class RegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //processing post request form
-        System.out.println("Request Received");
+//        System.out.println("Request Received");
 //        request.getParameterMap().forEach((x, y) -> System.out.print(x + " = " + Arrays.toString(y) + ","));
 
         String email = request.getParameter("email");
@@ -45,6 +45,8 @@ public class RegistrationServlet extends HttpServlet {
         String age = request.getParameter("age");
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
+
+        System.out.println(email);
 
         if (email.equals("")  || name .equals("") || age .equals("") || password.equals("") || confirmPassword .equals("")) {
             request.setAttribute("error", "You are missing of the inputs");

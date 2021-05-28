@@ -35,7 +35,6 @@ public class RegistrationServlet extends HttpServlet {
     //Hide the parameters with in the request. They are not displayed in the url.
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         //processing post request form
 //        System.out.println("Request Received");
 //        request.getParameterMap().forEach((x, y) -> System.out.print(x + " = " + Arrays.toString(y) + ","));
@@ -60,6 +59,5 @@ public class RegistrationServlet extends HttpServlet {
                 System.out.println("The account has been created!!!");
             }
         }
-
     }
 }

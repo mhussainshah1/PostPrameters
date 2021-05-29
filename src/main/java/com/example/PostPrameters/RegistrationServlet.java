@@ -45,9 +45,9 @@ public class RegistrationServlet extends HttpServlet {
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
 
-        System.out.println(email);
+        //TODO: check why form is not returning null?
 
-        if (email.equals("")  || name .equals("") || age .equals("") || password.equals("") || confirmPassword .equals("")) {
+        if (email == null || name == null || age == null || password == null || confirmPassword == null) {
             request.setAttribute("error", "You are missing of the inputs");
             doGet(request, response);
         } else {

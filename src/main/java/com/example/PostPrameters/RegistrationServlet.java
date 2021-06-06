@@ -47,7 +47,8 @@ public class RegistrationServlet extends HttpServlet {
 
         //TODO: check why form is not returning null?
 
-        if (email == null || name == null || age == null || password == null || confirmPassword == null) {
+        if (email == null || name == null || age == null || password == null || confirmPassword == null ||
+                email.isBlank() || name.isBlank() || age.isBlank() || password.isBlank() || confirmPassword.isBlank()) {
             request.setAttribute("error", "You are missing of the inputs");
             doGet(request, response);
         } else {
